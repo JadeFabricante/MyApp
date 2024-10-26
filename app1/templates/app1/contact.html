@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>Contact Us - App 1</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f0f4f8;
+            color: #333;
+        }
+        /* Jumbotron styling */
+        .jumbotron {
+            background: linear-gradient(45deg, #ff5f6d, #ffc371);
+            color: white;
+            border-radius: 0;
+            padding: 100px 0;
+            margin-bottom: 50px;
+            text-align: center;
+        }
+        h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+        }
+        .contact-form {
+            margin: 50px auto;
+            padding: 40px;
+            background-color: white;
+            border-radius: 20px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            font-size: 2.5rem;
+            color: #007bff;
+            margin-bottom: 30px;
+        }
+        .form-control {
+            border-radius: 10px;
+            padding: 15px;
+        }
+        label {
+            font-weight: bold;
+        }
+        .btn-primary, .btn-secondary {
+            border-radius: 30px;
+            padding: 10px 30px;
+            font-weight: 600;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+        .btn-primary {
+            background: linear-gradient(45deg, #007bff, #00c6ff);
+            border: none;
+        }
+        .btn-primary:hover {
+            background-color: #0056b3;
+            transform: scale(1.05);
+        }
+        .btn-secondary {
+            background: linear-gradient(45deg, #ff512f, #dd2476);
+            border: none;
+        }
+        .btn-secondary:hover {
+            background-color: #dd2476;
+            transform: scale(1.05);
+        }
+        /* Add spacing at the bottom */
+        footer {
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Jumbotron -->
+    <div class="jumbotron">
+        <div class="container">
+            <h1>Contact Us</h1>
+            <p class="lead">We'd love to hear from you. Reach out to us with any questions or feedback.</p>
+        </div>
+    </div>
+
+    <!-- Contact Form -->
+    <div class="container">
+        <div class="contact-form col-md-8 offset-md-2">
+            <h2>Get in Touch</h2>
+            <form>
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea class="form-control" id="message" rows="4" placeholder="Your message"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+                <a href="/app1/home" class="btn btn-secondary ml-2">Back to Home</a>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center py-4">
+        <div class="container">
+            <p>&copy; 2024 App 1. All Rights Reserved.</p>
+            <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
